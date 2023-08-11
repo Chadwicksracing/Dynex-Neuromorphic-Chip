@@ -13,16 +13,26 @@ This reference implementation proves the mathematical model and has not been opt
 ### Requirements:
 Please note that it is required to have the [Boost library](https://www.boost.org) (Version 1.74.0 or better) installed: 
 
+# Linux (Ubuntu)
 ```
-sudo apt-get install libboost-all-dev (Ubuntu Linux)
-brew install boost (MacOS)
+sudo apt-get install build-essential automake libssl-dev libcurl4-openssl-dev libjansson-dev libgmp-dev zlib1g-dev libnuma-dev git g++ make cmake libboost-all-dev
+```
+
+# MacOS
+```
+brew install boost
 ```
 
 ### Build from source:
 
+# Linux (Ubuntu)
 ```
-g++ dynex.cc -o dynex -std=c++17 -Ofast -lpthread -fpermissive (Linux)
-g++ dynex.cc -o dynex -std=c++17 -Ofast -I /opt/homebrew/cellar/boost/1.78.0/include -L /opt/homebrew/cellar/boost/1.78.0/lib (MacOS)
+g++ dynex.cc -o dynex -std=c++17 -Ofast -lpthread -fpermissive
+```
+
+# MacOS
+```
+g++ dynex.cc -o dynex -std=c++17 -Ofast -I /opt/homebrew/cellar/boost/1.78.0/include -L /opt/homebrew/cellar/boost/1.78.0/lib
 ```
 
 ### Run the neuromorphic sat solver:
