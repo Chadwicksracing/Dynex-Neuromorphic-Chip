@@ -11,26 +11,26 @@ To illustrate the performance of neuromorphic computing, the following example s
 This reference implementation proves the mathematical model and has not been optimised for speed and performance.
 
 ### Requirements:
-Please note that it is required to have the [Boost library](https://www.boost.org) (Version 1.74.0 or better) installed: 
+Please note that it is required to have the [Boost library](https://www.boost.org) (Version 1.74.0 or better) installed:
 
-# Linux (Ubuntu)
+#### Linux (Ubuntu)
 ```
 sudo apt-get install build-essential automake libssl-dev libcurl4-openssl-dev libjansson-dev libgmp-dev zlib1g-dev libnuma-dev git g++ make cmake libboost-all-dev
 ```
 
-# MacOS
+#### MacOS
 ```
 brew install boost
 ```
 
 ### Build from source:
 
-# Linux (Ubuntu)
+#### Linux (Ubuntu)
 ```
 g++ dynex.cc -o dynex -std=c++17 -Ofast -lpthread -fpermissive
 ```
 
-# MacOS
+#### MacOS
 ```
 g++ dynex.cc -o dynex -std=c++17 -Ofast -I /opt/homebrew/cellar/boost/1.78.0/include -L /opt/homebrew/cellar/boost/1.78.0/lib
 ```
